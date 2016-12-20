@@ -4,6 +4,11 @@
 
 Allows a computer to be turned on or awakened from the [WOL](https://en.wikipedia.org/wiki/Wake-on-LAN) protocol by Kalliope.
 
+## Installation
+```
+kalliope neuron-install --git-url "https://github.com/kalliope-project/kalliope_neuron_wake_on_lan.git"
+```
+
 ## Options
 
 | parameter         | required | default         | choices  | comment                                                                                                                                               |
