@@ -1,5 +1,6 @@
 ---
-   neuron_name: "wake_on_lan"
+   name: "wake_on_lan"
+   type: "neuron"
    author: "Kalliope project team"
 
    minimum_kalliope_version: 0.4.0
