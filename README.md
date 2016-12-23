@@ -53,3 +53,10 @@ In the following example, we suppose that kalliope is on a local areal network 1
 > **Note:** The target computer must be on the same local area network as Kalliope.
 
 > **Note:** The target computer must has wake on lan activated in BIOS settings and my be in [OS settings](http://www.groovypost.com/howto/enable-wake-on-lan-windows-10/) too.
+
+## License
+
+Copyright (c) 2016. All rights reserved.
+
+Kalliope is covered by the MIT license, a permissive free software license that lets you do anything you want with the source code, 
+as long as you provide back attribution and ["don't hold you liable"](http://choosealicense.com/). For the full license text see the [LICENSE.md](LICENSE.md) file.
