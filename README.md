@@ -6,7 +6,7 @@ Allows a computer to be turned on or awakened from the [WOL](https://en.wikipedi
 
 ## Installation
 ```
-kalliope install --git-url "https://github.com/kalliope-project/kalliope_neuron_wake_on_lan.git"
+kalliope install --git-url https://github.com/kalliope-project/kalliope_neuron_wake_on_lan.git
 ```
 
 ## Options
