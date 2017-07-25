@@ -14,7 +14,7 @@ kalliope install --git-url https://github.com/kalliope-project/kalliope_neuron_w
 | parameter         | required | default         | choices  | comment                                                                                                                                               |
 |-------------------|----------|-----------------|----------|-------------------------------------------------------------------------------------------------------------------------------------------------------|
 | mac_address       | yes      |                 |          | Mac address of the target PC to wake up. Accepted format: 'ff.ff.ff.ff.ff.ff', '00-00-00-00-00-00', 'FFFFFFFFFFFF'                                    |
-| broadcast_address | no       | 255.255.255.255 |          | Broadcast address where the magic packet will bee sent. By default on most LAN is 255.255.255.255                                                     |
+| broadcast_address | no       | 255.255.255.255 |          | Broadcast address where the magic packet will be sent. By default on most LAN is 255.255.255.255                                                     |
 | port              | no       | 9               |          | The magic packet is typically sent as a UDP datagram to port 0,6 7 or 9. This parameter must be an integer. Do not add 'quotes' in your configuration |
 
 
