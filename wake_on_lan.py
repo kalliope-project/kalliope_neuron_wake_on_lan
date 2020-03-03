@@ -2,7 +2,7 @@ import ipaddress
 import logging
 
 from kalliope.core.NeuronModule import NeuronModule, MissingParameterException, InvalidParameterException
-from wakeonlan import wol
+from wakeonlan import send_magic_packet
 
 logging.basicConfig()
 logger = logging.getLogger("kalliope")
@@ -18,16 +18,14 @@ class Wake_on_lan(NeuronModule):
 
         # check parameters
         if self._is_parameters_ok():
-            # convert to unicode for testing
-            broadcast_address_unicode = self.broadcast_address.decode('utf-8')
             # check the ip address is a valid one
-            ipaddress.ip_address(broadcast_address_unicode)
+            ipaddress.ip_address(self.broadcast_address)
 
             logger.debug("Call Wake_on_lan_neuron with parameters: mac_address: %s, broadcast_address: %s, port: %s"
                          % (self.mac_address, self.broadcast_address, self.port))
 
             # send the magic packet, the mac address format will be check by the lib
-            wol.send_magic_packet(self.mac_address, ip_address=self.broadcast_address, port=self.port)
+            send_magic_packet(self.mac_address, ip_address=self.broadcast_address, port=self.port)
 
     def _is_parameters_ok(self):
         """
